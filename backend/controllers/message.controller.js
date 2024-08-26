@@ -34,7 +34,7 @@ export const sendMessage = async (req, res) => {
 		// this will run in parallel
 		await Promise.all([conversation.save(), newMessage.save()]);
 
-		// SOCKET IO functionality is here
+		// SOCKET IO functionality eere
 		const receiverSocketId = getReceiverSocketId(receiverId);
 		if (receiverSocketId) {
 			// io.to(<socket_id>).emit() used to send events to specific client
