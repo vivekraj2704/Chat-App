@@ -1,5 +1,11 @@
 # Chat-App
 
+## Deployment
+
+The project is live and can be accessed at the following link:
+
+[Convo Sphere - Live Demo](https://convo-sphere.onrender.com)
+
 ## Overview
 
 Chat-App is a real-time messaging application built with modern web technologies. It features user authentication, real-time communication, and online status indicators. The app is built with the MERN stack (MongoDB, Express, React, Node.js), and leverages Socket.io for real-time functionalities. TailwindCSS and Daisy UI are used for styling, ensuring a responsive and visually appealing user interface.
