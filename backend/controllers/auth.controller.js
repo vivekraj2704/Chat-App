@@ -21,8 +21,11 @@ export const signup = async (req, res) => {
         const salt = await bcryptjs.genSalt(10);
         const hashedPassword = await bcryptjs.hash(password, salt);
 
-        const boyProfilePic = `https://avatar-placeholder.iran.liara.run/public/boy?username=${username}`
-        const girlProfilePic = `https://avatar-placeholder.iran.liara.run/public/girl?username=${username}`
+        const boyNumber = Math.floor(Math.random() * 54) + 1;
+        const girlNumber = Math.floor(Math.random() * 16) + 55;
+
+        const boyProfilePic = `https://avatar-placeholder.iran.liara.run/public/${boyNumber}`
+        const girlProfilePic = `https://avatar-placeholder.iran.liara.run/public/${girlNumber}`
 
         const newUser = new User({
             fullName,
